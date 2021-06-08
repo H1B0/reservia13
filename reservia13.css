@@ -351,13 +351,13 @@ button span:nth-child(4) {
     flex-wrap: wrap;
     flex-direction: column;
 
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 30%;
 
     padding: 35px 25px;
 
     background-color: #ececec;
-    height: 900px;
+    height: 850px;
     order: 3;
   }
 }
@@ -407,7 +407,8 @@ button span:nth-child(4) {
     flex-direction: row;
     flex-wrap: wrap;
     width: 25vw;
-
+    margin-top: 25px;
+    margin-bottom: 25px;
     height: 150px;
   }
 }
@@ -587,7 +588,7 @@ button span:nth-child(4) {
     border-radius: 25px;
     width: 65%;
     background-color: #ececec;
-    height: 900px;
+    height: 850px;
   }
 }
 .box1-title-text {
@@ -598,7 +599,7 @@ button span:nth-child(4) {
 .photo_box1 a {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   height: 200px;
   background-color: white;
   border-radius: 25px;
@@ -702,11 +703,13 @@ div.show-more {
 @media only screen and (min-width: 768px) {
   .box3 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wp;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100vw;
-    height: 1500px;
+    height: 800px;
+    background-color: greenyellow;
+    padding: 0 25px;
   }
 }
 
@@ -714,6 +717,7 @@ div.show-more {
   font-weight: 700;
   font-size: 1.9rem;
   width: 100%;
+  padding: 0 25px;
 }
 .photo_box3 a {
   display: flex;
@@ -758,23 +762,23 @@ div.show-more {
     display: flex;
     flex-direction: column;
 
-    height: 90vw;
-    width: 250px;
+    height: 700px;
+    width: 25%;
   }
   .bxb a {
     display: flex;
     flex-direction: column;
 
-    height: 45vw;
-    width: 250px;
+    height: 350px;
+    width: 25%;
   }
 
   .bxc a {
     display: flex;
     flex-direction: column;
 
-    height: 35vw;
-    width: 250px;
+    height: 250px;
+    width: 25%;
   }
 }
 .photo_box3 img {
