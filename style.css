@@ -231,7 +231,6 @@ div.filter-bar {
   font-weight: 900;
 }
 .filter-bar h4 {
-  margin-right: ;
   margin-right: 80vw;
 }
 div > button {
@@ -690,10 +689,28 @@ div.show-more {
 @media only screen and (min-width: 768px) {
   .box3 {
     display: flex;
-    background-color: chartreuse;
+    flex-direction: column;
+
+    width: 100vw;
+    height: auto;
   }
 }
 
+.box3-title-text {
+  font-weight: 700;
+  font-size: 1.9rem;
+  width: 100%;
+  padding: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .box3-title-text {
+    width: 80%;
+    height: 25px;
+    margin: 25px;
+    text-align: start;
+  }
+}
 .box3-section {
   display: flex;
 
@@ -730,14 +747,24 @@ div.show-more {
     padding: 0 25px;
   }
 }
-
-.box3-title-text {
-  font-weight: 700;
-  font-size: 1.9rem;
-  width: 100%;
-  padding: 0 25px;
+.bxa,
+.bxb,
+.bxc {
+  width: auto;
 }
-.photo_box3 a {
+
+@media only screen and (min-width: 768px) {
+  .bxa,
+  .bxb,
+  .bxc {
+    width: 20%;
+  }
+}
+
+/*9999*/
+.bxa a,
+.bxb a,
+.bxc a {
   display: flex;
   flex-direction: column;
 
@@ -781,22 +808,22 @@ div.show-more {
     flex-direction: column;
 
     height: 700px;
-    width: 25%;
+    width: 100%;
   }
   .bxb a {
     display: flex;
     flex-direction: column;
 
     height: 350px;
-    width: 25%;
+    width: 100%;
   }
 
   .bxc a {
     display: flex;
     flex-direction: column;
 
-    height: 250px;
-    width: 25%;
+    height: 275px;
+    width: 100%;
   }
 }
 .photo_box3 img {
