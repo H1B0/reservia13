@@ -231,7 +231,6 @@ div.filter-bar {
   font-weight: 900;
 }
 .filter-bar h4 {
-  margin-right: ;
   margin-right: 80vw;
 }
 div > button {
@@ -735,7 +734,7 @@ div.show-more {
   font-weight: 700;
   font-size: 1.9rem;
   width: 100%;
-  padding: 0 25px;
+  padding: 25px;
 }
 .photo_box3 a {
   display: flex;
