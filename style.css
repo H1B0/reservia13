@@ -267,15 +267,19 @@ button span {
 }
 /*low-cost*/
 .filter-bar button:nth-child(1) {
+  order: 1;
 }
 /*family-friendly*/
 .filter-bar button:nth-child(2) {
+  order: 2;
 }
 /*romantic*/
 .filter-bar button:nth-child(3) {
+  order: 4;
 }
 /*pets allowed*/
 .filter-bar button:nth-child(4) {
+  order: 3;
 }
 /*info*/
 .info {
@@ -759,6 +763,13 @@ div.show-more {
   .bxc {
     width: 20%;
   }
+}
+
+.box3-title-text {
+  font-weight: 700;
+  font-size: 1.9rem;
+  width: 100%;
+  padding: 25px;
 }
 
 /*9999*/
