@@ -14,21 +14,25 @@ a {
 }
 header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   align-content: center;
   width: 100vw;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  position: relative;
 }
 .logo img {
   margin-right: 20px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: -45px;
+  margin-left: 7px;
+  margin-top: 15px;
+  margin: 15px 20px -45px 7px;
 }
 .nav-link {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
 
@@ -36,25 +40,46 @@ header {
   list-style-type: none;
 }
 .nav-link li {
-  padding: 15px;
+  padding: 20px 0;
 }
-.accommodations,
+
 .activities {
   width: 50%;
   border-bottom: 2px solid #ececec;
   text-align: center;
+  order: 0;
 }
-.accommodations:active,
-.activities:active {
+.accommodations {
   width: 50%;
+  border-bottom: 2px solid #ececec;
+  text-align: center;
+  order: 1;
+}
+.accommodations:hover,
+.activities:hover {
   color: #0065fc;
   border-bottom: 2px solid #0065fc;
-  text-align: center;
+  padding: 20px 0;
 }
 .signup {
   color: #0065fc;
   font-weight: 800;
   text-align: justify;
+  width: 30%;
+  order: 1;
+}
+#order1 {
+  order: 1;
+}
+
+#order2 {
+  order: 3;
+}
+#order3 {
+  order: 2;
+}
+#order4 {
+  order: 4;
 }
 @media only screen and (min-width: 600px) {
   header {
@@ -63,62 +88,53 @@ header {
     padding-right: 25px;
   }
   .nav-link {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
   }
+  .nav-link li {
+    padding: 35px 0;
+  }
+  .nav-link li {
+    padding: 35px 0;
+  }
 
   .accommodations {
-    color: initial;
-    position: initial;
+    width: unset;
+    order: 2;
+    border-top: 2px solid #ececec;
+    border-bottom: unset;
   }
-  .active {
-    color: #0065fc;
-  }
+
   .activities {
-    color: initial;
-    position: initial;
+    width: unset;
+    order: 1;
+    border-top: 2px solid #ececec;
+    border-bottom: unset;
+  }
+  .accommodations :hover,
+  .activities :hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+    border-bottom: unset;
+    padding: 35px 0;
   }
   .signup {
     color: #0065fc;
     font-weight: 900;
     padding: 5px;
+    width: unset;
+    order: 0;
+  }
+  #order2 {
+    order: 2;
+  }
+  #order3 {
+    order: 3;
   }
 }
-@media only screen and (min-width: 768px) {
-  header {
-    width: 100vw;
-    padding: 0 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  .nav-link {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    list-style-type: none;
-    padding-bottom: 20px;
-  }
 
-  .accommodations {
-    color: initial;
-    position: initial;
-  }
-
-  .activities {
-    color: initial;
-    position: initial;
-  }
-  .signup {
-    color: #0065fc;
-    font-weight: 900;
-    padding: 5px;
-  }
-}
 /*searchBOX*/
 .searchbox {
   margin: 10px 25px;
@@ -126,7 +142,7 @@ header {
 .description h3 {
   font-weight: 700;
   font-size: 2rem;
-  margin: 0;
+  margin-top: 40px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -267,19 +283,19 @@ button span {
 }
 /*low-cost*/
 .filter-bar button:nth-child(1) {
-  order: 1;
+  order: 0;
 }
 /*family-friendly*/
 .filter-bar button:nth-child(2) {
-  order: 2;
+  order: 0;
 }
 /*romantic*/
 .filter-bar button:nth-child(3) {
-  order: 4;
+  order: 0;
 }
 /*pets allowed*/
 .filter-bar button:nth-child(4) {
-  order: 3;
+  order: 0;
 }
 /*info*/
 .info {
@@ -361,11 +377,11 @@ button span {
     justify-content: flex-start;
     width: 30%;
 
-    padding: 35px 25px;
+    padding: 35px 15px;
 
     background-color: #ececec;
     height: 850px;
-    order: 3;
+    order: 2;
   }
 }
 
@@ -408,7 +424,7 @@ button span {
     flex-wrap: wrap;
     width: 30vw;
 
-    height: 300px;
+    height: 330px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -522,7 +538,7 @@ button span {
 .accom_name_box2 {
   font-weight: 700;
   font-size: 1.5rem;
-  padding: 5px 0;
+  padding: 20px 0;
 
   margin: 0;
 }
@@ -531,14 +547,13 @@ button span {
     font-weight: 900;
     font-size: 1.2rem;
     width: 100%;
-    padding-bottom: 5px;
-    margin-top: 0;
+    padding: 5px 0;
   }
 }
 @media only screen and (min-width: 768px) {
   .accom_name_box2 {
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 0.9rem;
 
     height: 60px;
   }
@@ -623,7 +638,7 @@ button span {
     flex-wrap: wrap;
     width: 30vw;
     padding: 5px;
-    height: 250px;
+    height: 280px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -704,7 +719,7 @@ div.show-more {
   font-weight: 700;
   font-size: 1.9rem;
   width: 100%;
-  padding: 25px;
+  padding: 30px 25px 5px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -713,6 +728,7 @@ div.show-more {
     height: 25px;
     margin: 25px;
     text-align: start;
+    padding: 30px 0px;
   }
 }
 .box3-section {
@@ -842,10 +858,19 @@ div.show-more {
   height: 75%;
   border-radius: 25px 25px 0 0;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .bxa img {
     width: 100%;
-    height: 75%;
+    height: 90%;
+  }
+  .bxb img {
+    width: 100%;
+    height: 83%;
+  }
+
+  .bxc img {
+    width: 100%;
+    height: 77%;
   }
 }
 .activ_name {
@@ -853,6 +878,12 @@ div.show-more {
   font-size: 1.1rem;
 
   padding: 5px 20px;
+}
+@media only screen and (min-width: 768px) {
+  .activ_name {
+    width: 100%;
+    height: 10p%;
+  }
 }
 /*footer*/
 
