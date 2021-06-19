@@ -113,8 +113,8 @@ header {
     border-top: 2px solid #ececec;
     border-bottom: unset;
   }
-  .accommodations :hover,
-  .activities :hover {
+  .accommodations:hover,
+  .activities:hover {
     color: #0065fc;
     border-top: 2px solid #0065fc;
     border-bottom: unset;
@@ -495,7 +495,14 @@ button span {
 .stars_box2 {
   letter-spacing: -1.5px;
   font-size: 1rem;
+  align-self: flex-end;
 }
+@media only screen and (min-width: 600px) {
+  .stars_box2 {
+    align-self: flex-start;
+  }
+}
+
 .stars_box1 {
   letter-spacing: -1.5px;
   font-size: 1rem;
@@ -548,14 +555,13 @@ button span {
     font-size: 1.2rem;
     width: 100%;
     padding: 5px 0;
+    height: 60px;
   }
 }
 @media only screen and (min-width: 768px) {
   .accom_name_box2 {
     font-weight: 900;
     font-size: 0.9rem;
-
-    height: 60px;
   }
 }
 .price_box {
