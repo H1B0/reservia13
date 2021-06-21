@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -22,12 +21,9 @@ header {
   width: 100vw;
 }
 .logo img {
-  margin-right: 20px;
   width: 100%;
   height: 50px;
-  margin-bottom: -45px;
-  margin-left: 7px;
-  margin-top: 15px;
+
   margin: 15px 20px -45px 7px;
 }
 .nav-link {
@@ -92,9 +88,6 @@ header {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-  }
-  .nav-link li {
-    padding: 35px 0;
   }
   .nav-link li {
     padding: 35px 0;
