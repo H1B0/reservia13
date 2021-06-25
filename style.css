@@ -65,19 +65,7 @@ header {
   width: 30%;
   order: 1;
 }
-#order1 {
-  order: 1;
-}
 
-#order2 {
-  order: 3;
-}
-#order3 {
-  order: 2;
-}
-#order4 {
-  order: 4;
-}
 @media only screen and (min-width: 600px) {
   header {
     display: flex;
@@ -271,6 +259,20 @@ button span {
   font-size: 1rem;
   padding: 15px 30px 15px 10px;
   font-weight: 800;
+}
+
+#order1 {
+  order: 1;
+}
+
+#order2 {
+  order: 3;
+}
+#order3 {
+  order: 2;
+}
+#order4 {
+  order: 4;
 }
 /*low-cost*/
 .filter-bar button:nth-child(1) {
