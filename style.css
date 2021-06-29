@@ -73,7 +73,7 @@ header {
     padding-right: 25px;
   }
   .nav-link {
-    width: 50%;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -145,6 +145,7 @@ header {
     font-size: 1rem;
   }
 }
+
 form {
   margin: 30px 0;
   display: flex;
@@ -153,23 +154,12 @@ form {
   flex-wrap: nowrap;
   width: 100vw;
 }
-@media only screen and (min-width: 600px) {
-  form {
-    margin: 30px 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 400px;
-  }
-}
 form i.fa-map-marker-alt {
   padding: 20px;
   background-color: #f2f2f2;
   border-radius: 15px 0 0 15px;
   border: 1px solid #f2f2f2;
 }
-
 form input {
   padding: 20px;
   width: 70%;
@@ -177,31 +167,16 @@ form input {
   outline: none;
   position: relative;
 }
-@media only screen and (min-width: 600px) {
-  form input {
-    width: 250px;
-  }
-}
 
-input.placeholder::-webkit-input-placeholder {
+input.placeholder {
   font-weight: 700;
   font-size: 1rem;
   color: black;
   padding-left: 10px;
 }
+
 form input.btn {
   display: none;
-}
-@media only screen and (min-width: 600px) {
-  form input.btn {
-    background-color: #0065fc;
-    color: white;
-    border-radius: 0 15px 15px 0;
-    display: flex;
-    width: 100px;
-    font-size: 1rem;
-    font-weight: 500;
-  }
 }
 form .fa-search {
   background-color: #0065fc;
@@ -213,10 +188,31 @@ form .fa-search {
   right: 10%;
 }
 @media only screen and (min-width: 600px) {
+  form {
+    margin: 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 400px;
+  }
+  form input {
+    width: 250px;
+  }
+  form input.btn {
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
   form .fa-search {
     display: none;
   }
 }
+
 /*FilterBOX*/
 
 div.filter-bar {
@@ -298,6 +294,7 @@ button span {
 }
 #info1 {
   padding-left: 10px;
+  width: 400px;
 }
 .info .fas {
   color: #0065fc;
@@ -408,9 +405,7 @@ button span {
   box-shadow: 0 0.1px 0px 0 rgba(0, 0, 0, 0.19),
     0 0px 10px 0 rgba(0, 0, 0, 0.19);
 }
-.photo_box2 a:hover {
-  transition: 1s ease-in-out;
-}
+
 @media only screen and (min-width: 600px) {
   .photo_box2 a {
     display: flex;
@@ -435,6 +430,7 @@ button span {
 .image_box2 {
   width: 40%;
   height: 100%;
+  object-fit: cover;
   padding: 5px;
   border-radius: 25px 0 0 25px;
 }
@@ -539,7 +535,7 @@ button span {
   font-weight: 700;
   font-size: 1.5rem;
   padding: 20px 0;
-
+  height: 85px;
   margin: 0;
 }
 @media only screen and (min-width: 600px) {
@@ -548,23 +544,24 @@ button span {
     font-size: 1.2rem;
     width: 100%;
     padding: 5px 0;
-    height: 60px;
+    height: 70px;
   }
 }
 @media only screen and (min-width: 768px) {
   .accom_name_box2 {
     font-weight: 900;
     font-size: 0.9rem;
+    height: 60px;
   }
 }
 .price_box {
   font-weight: lighter;
   font-size: 1rem;
   margin: 0;
+  height: 30px;
 }
 @media only screen and (min-width: 768px) {
   .price_box {
-    font-weight: lighter;
     font-size: 0.8rem;
   }
 }
@@ -624,19 +621,19 @@ button span {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 200px;
+  height: 250px;
+  padding: 5px;
   background-color: white;
   border-radius: 25px;
   box-shadow: 0 0.1px 0px 0 rgba(0, 0, 0, 0.19),
     0 3px 12px 0 rgba(0, 0, 0, 0.19);
-  transition: box-shadow 0.5s ease-in-out;
 }
 @media only screen and (min-width: 600px) {
   .photo_box1 a {
     display: flex;
     flex-wrap: wrap;
     width: 30vw;
-    padding: 5px;
+
     height: 280px;
   }
 }
@@ -654,6 +651,7 @@ button span {
   width: 100%;
   height: 55%;
   border-radius: 25px 25px 0 0;
+  object-fit: cover;
 }
 @media only screen and (min-width: 600px) {
   .image_box1 {
@@ -677,7 +675,7 @@ button span {
     margin: 0;
     padding: 0 10px;
     width: 100%;
-    height: 45%;
+
     justify-content: space-between;
   }
 }
@@ -856,10 +854,11 @@ div.show-more {
   width: 100%;
   height: 75%;
   border-radius: 25px 25px 0 0;
+  object-fit: cover;
 }
 @media only screen and (min-width: 768px) {
   .bxa img {
-    width: 100%;
+    max-width: 100%;
     height: 90%;
   }
   .bxb img {
@@ -881,7 +880,6 @@ div.show-more {
 @media only screen and (min-width: 768px) {
   .activ_name {
     width: 100%;
-    height: 10p%;
   }
 }
 /*footer*/
