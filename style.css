@@ -73,7 +73,7 @@ header {
     padding-right: 25px;
   }
   .nav-link {
-    width: 400px;
+    width: 300px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -116,7 +116,14 @@ header {
     order: 3;
   }
 }
-
+@media only screen and (min-width: 768px) {
+  .nav-link {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+}
 /*searchBOX*/
 .searchbox {
   margin: 10px 25px;
@@ -393,7 +400,11 @@ button span {
   font-weight: 700;
   font-size: 1.9rem;
 }
-
+@media only screen and (min-width: 768px) {
+  .box2-title-text {
+    margin-bottom: 20px;
+  }
+}
 .photo_box2 a {
   display: flex;
 
@@ -695,7 +706,7 @@ button span {
 div.show-more {
   font-size: 1.5rem;
   font-weight: 800;
-  margin: 15px 0;
+  margin: 15px 0 15px;
 }
 /*box3:activities section*/
 
@@ -715,14 +726,14 @@ div.show-more {
 .box3-title-text {
   font-weight: 700;
   font-size: 1.9rem;
-  width: 100%;
+
   padding: 30px 25px 5px;
 }
 
 @media only screen and (min-width: 768px) {
   .box3-title-text {
     width: 80%;
-    height: 25px;
+
     margin: 25px;
     text-align: start;
     padding: 30px 0px;
