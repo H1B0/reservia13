@@ -727,16 +727,15 @@ div.show-more {
   font-weight: 700;
   font-size: 1.9rem;
 
-  padding: 30px 25px 5px;
+  padding: 45px 25px 30px;
 }
 
 @media only screen and (min-width: 768px) {
   .box3-title-text {
     width: 80%;
 
-    margin: 25px;
     text-align: start;
-    padding: 30px 0px;
+    padding: 80px 25px 0;
   }
 }
 .box3-section {
@@ -744,13 +743,13 @@ div.show-more {
 
   flex-direction: column;
 
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100vw;
 
   padding: 0 25px 35px 25px;
 
   background-color: white;
-  height: 2000px;
+  height: 1800px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -770,7 +769,7 @@ div.show-more {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100vw;
-    height: 800px;
+    height: 600px;
 
     padding: 0 25px;
   }
@@ -781,6 +780,23 @@ div.show-more {
   width: auto;
 }
 
+.last-card {
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 600px) {
+  .last-card {
+    margin: 0;
+  }
+}
+.bxa img,
+.bxb img,
+.bxc img {
+  width: 100%;
+  height: 75%;
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
+  filter: contrast(52%) brightness(117%);
+}
 @media only screen and (min-width: 768px) {
   .bxa,
   .bxb,
@@ -789,14 +805,6 @@ div.show-more {
   }
 }
 
-.box3-title-text {
-  font-weight: 700;
-  font-size: 1.9rem;
-  width: 100%;
-  padding: 25px;
-}
-
-/*9999*/
 .bxa a,
 .bxb a,
 .bxc a {
@@ -842,14 +850,14 @@ div.show-more {
     display: flex;
     flex-direction: column;
 
-    height: 700px;
+    height: 500px;
     width: 100%;
   }
   .bxb a {
     display: flex;
     flex-direction: column;
 
-    height: 350px;
+    height: 250px;
     width: 100%;
   }
 
@@ -857,16 +865,11 @@ div.show-more {
     display: flex;
     flex-direction: column;
 
-    height: 275px;
+    height: 200px;
     width: 100%;
   }
 }
-.photo_box3 img {
-  width: 100%;
-  height: 75%;
-  border-radius: 25px 25px 0 0;
-  object-fit: cover;
-}
+
 @media only screen and (min-width: 768px) {
   .bxa img {
     max-width: 100%;
