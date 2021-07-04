@@ -795,7 +795,7 @@ div.show-more {
   height: 75%;
   border-radius: 25px 25px 0 0;
   object-fit: cover;
-  filter: contrast(52%) brightness(117%);
+  filter: contrast(100%) brightness(110%);
 }
 @media only screen and (min-width: 768px) {
   .bxa,
